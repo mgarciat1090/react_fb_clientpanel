@@ -5,7 +5,7 @@ import 'firebase/firestore';
 import { reactReduxFirebase, firebaseReducer } from 'react-redux-firebase';
 import { reduxFirestore, firestoreReducer } from 'redux-firestore';
 //Reducers
-// @todo
+import notifyReducer from './reducers/notifyReducer';
 
 const firebaseConfig = {
     apiKey: "AIzaSyDqPEMrRqk5dOY5glY6pbH5q_FDjbGFhPo",
@@ -38,7 +38,8 @@ const createStoreWithFirebase = compose(
 
 const rootReducer = combineReducers({
     firebase: firebaseReducer,
-    firestore: firestoreReducer
+    firestore: firestoreReducer,
+    notify: notifyReducer
 })
 
 //Create initial State
