@@ -8,7 +8,7 @@ import { reduxFirestore, firestoreReducer } from 'redux-firestore';
 import notifyReducer from './reducers/notifyReducer';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDqPEMrRqk5dOY5glY6pbH5q_FDjbGFhPo",
+    apiKey: "",
     authDomain: "reactclientpanel-e018e.firebaseapp.com",
     databaseURL: "https://reactclientpanel-e018e.firebaseio.com",
     projectId: "reactclientpanel-e018e",
